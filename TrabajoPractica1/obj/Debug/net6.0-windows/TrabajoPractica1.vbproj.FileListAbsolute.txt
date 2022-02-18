@@ -1,0 +1,17 @@
+E:\escuela\visualbasic\TrabajoPractica1\bin\Debug\net6.0-windows\TrabajoPractica1.exe
+E:\escuela\visualbasic\TrabajoPractica1\bin\Debug\net6.0-windows\TrabajoPractica1.deps.json
+E:\escuela\visualbasic\TrabajoPractica1\bin\Debug\net6.0-windows\TrabajoPractica1.runtimeconfig.json
+E:\escuela\visualbasic\TrabajoPractica1\bin\Debug\net6.0-windows\TrabajoPractica1.dll
+E:\escuela\visualbasic\TrabajoPractica1\bin\Debug\net6.0-windows\ref\TrabajoPractica1.dll
+E:\escuela\visualbasic\TrabajoPractica1\bin\Debug\net6.0-windows\TrabajoPractica1.pdb
+E:\escuela\visualbasic\TrabajoPractica1\obj\Debug\net6.0-windows\TrabajoPractica1.vbproj.AssemblyReference.cache
+E:\escuela\visualbasic\TrabajoPractica1\obj\Debug\net6.0-windows\TrabajoPractica1.Form1.resources
+E:\escuela\visualbasic\TrabajoPractica1\obj\Debug\net6.0-windows\TrabajoPractica1.vbproj.GenerateResource.cache
+E:\escuela\visualbasic\TrabajoPractica1\obj\Debug\net6.0-windows\TrabajoPractica1.GeneratedMSBuildEditorConfig.editorconfig
+E:\escuela\visualbasic\TrabajoPractica1\obj\Debug\net6.0-windows\TrabajoPractica1.AssemblyInfoInputs.cache
+E:\escuela\visualbasic\TrabajoPractica1\obj\Debug\net6.0-windows\TrabajoPractica1.AssemblyInfo.vb
+E:\escuela\visualbasic\TrabajoPractica1\obj\Debug\net6.0-windows\TrabajoPractica1.vbproj.CoreCompileInputs.cache
+E:\escuela\visualbasic\TrabajoPractica1\obj\Debug\net6.0-windows\TrabajoPractica1.dll
+E:\escuela\visualbasic\TrabajoPractica1\obj\Debug\net6.0-windows\ref\TrabajoPractica1.dll
+E:\escuela\visualbasic\TrabajoPractica1\obj\Debug\net6.0-windows\TrabajoPractica1.pdb
+E:\escuela\visualbasic\TrabajoPractica1\obj\Debug\net6.0-windows\TrabajoPractica1.genruntimeconfig.cache
