@@ -1,0 +1,9 @@
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\prestamo\prestamo\bin\Debug\prestamo.exe
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\prestamo\prestamo\bin\Debug\prestamo.pdb
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\prestamo\prestamo\bin\Debug\prestamo.xml
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\prestamo\prestamo\obj\x86\Debug\TRABAJO0101.Form1.resources
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\prestamo\prestamo\obj\x86\Debug\TRABAJO0101.Resources.resources
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\prestamo\prestamo\obj\x86\Debug\prestamo.vbproj.GenerateResource.Cache
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\prestamo\prestamo\obj\x86\Debug\prestamo.exe
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\prestamo\prestamo\obj\x86\Debug\prestamo.xml
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\prestamo\prestamo\obj\x86\Debug\prestamo.pdb
