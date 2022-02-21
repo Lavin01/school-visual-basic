@@ -1,0 +1,9 @@
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\TERRENO\Terre\TERRENOS\bin\Debug\TERRENOS.exe
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\TERRENO\Terre\TERRENOS\bin\Debug\TERRENOS.pdb
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\TERRENO\Terre\TERRENOS\bin\Debug\TERRENOS.xml
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\TERRENO\Terre\TERRENOS\obj\x86\Debug\WindowsApplication1.Form1.resources
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\TERRENO\Terre\TERRENOS\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\TERRENO\Terre\TERRENOS\obj\x86\Debug\TERRENOS.vbproj.GenerateResource.Cache
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\TERRENO\Terre\TERRENOS\obj\x86\Debug\TERRENOS.exe
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\TERRENO\Terre\TERRENOS\obj\x86\Debug\TERRENOS.xml
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\TERRENO\Terre\TERRENOS\obj\x86\Debug\TERRENOS.pdb
