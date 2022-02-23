@@ -1,0 +1,14 @@
+﻿Public Class Form1
+    Function CalcularPago() As String
+        If tbxCantidad.Text IsNot "" Then
+            Dim resultado As Double = Val(tbxCantidad.Text) + Val(Val(tbxCantidad.Text) * 0.2)
+            Dim resultadoPagarText As String = "$" + resultado.ToString
+            Return resultadoPagarText
+        End If
+        Return "Faltan datos"
+    End Function
+
+    Private Sub TextBox2_TextChanged(sender As System.Object, e As System.EventArgs) Handles tbxCantidad.TextChanged
+        tbxResultado.Text = CalcularPago()
+    End Sub
+End Class
