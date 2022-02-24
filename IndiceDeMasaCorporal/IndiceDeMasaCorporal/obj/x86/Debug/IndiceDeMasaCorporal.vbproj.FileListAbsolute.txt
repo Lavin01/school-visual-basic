@@ -10,3 +10,9 @@ C:\Users\LABJUVENTUS\AppData\Local\Temporary Projects\IndiceDeMasaCorporal\obj\x
 C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\IndiceDeMasaCorporal\IndiceDeMasaCorporal\obj\x86\Debug\IndiceDeMasaCorporal.exe
 C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\IndiceDeMasaCorporal\IndiceDeMasaCorporal\obj\x86\Debug\IndiceDeMasaCorporal.xml
 C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\IndiceDeMasaCorporal\IndiceDeMasaCorporal\obj\x86\Debug\IndiceDeMasaCorporal.pdb
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\IndiceDeMasaCorporal\IndiceDeMasaCorporal\bin\Debug\IndiceDeMasaCorporal.exe
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\IndiceDeMasaCorporal\IndiceDeMasaCorporal\bin\Debug\IndiceDeMasaCorporal.pdb
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\IndiceDeMasaCorporal\IndiceDeMasaCorporal\bin\Debug\IndiceDeMasaCorporal.xml
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\IndiceDeMasaCorporal\IndiceDeMasaCorporal\obj\x86\Debug\IndiceDeMasaCorporal.Form1.resources
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\IndiceDeMasaCorporal\IndiceDeMasaCorporal\obj\x86\Debug\IndiceDeMasaCorporal.Resources.resources
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\IndiceDeMasaCorporal\IndiceDeMasaCorporal\obj\x86\Debug\IndiceDeMasaCorporal.vbproj.GenerateResource.Cache

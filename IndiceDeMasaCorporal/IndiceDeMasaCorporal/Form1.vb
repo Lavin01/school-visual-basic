@@ -2,7 +2,7 @@
 
     Function CalcularIMC() As String
         If tbxAltura.Text IsNot "" And tbxPeso.Text IsNot "" Then
-            Dim resultado As Double = (Val(tbxAltura.Text) * Val(tbxAltura.Text)) / Val(tbxPeso.Text)
+            Dim resultado As Double = Val(tbxPeso.Text) / (Val(tbxAltura.Text) * Val(tbxAltura.Text))
             Dim resultadoText As String = "IMC: " + resultado.ToString
             Return resultadoText
         End If

@@ -10,3 +10,9 @@ C:\Users\LABJUVENTUS\AppData\Local\Temporary Projects\PagoAVendedores\obj\x86\De
 C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\PagoAVendedores\PagoAVendedores\obj\x86\Debug\PagoAVendedores.exe
 C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\PagoAVendedores\PagoAVendedores\obj\x86\Debug\PagoAVendedores.xml
 C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\PagoAVendedores\PagoAVendedores\obj\x86\Debug\PagoAVendedores.pdb
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\PagoAVendedores\PagoAVendedores\bin\Debug\PagoAVendedores.exe
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\PagoAVendedores\PagoAVendedores\bin\Debug\PagoAVendedores.pdb
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\PagoAVendedores\PagoAVendedores\bin\Debug\PagoAVendedores.xml
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\PagoAVendedores\PagoAVendedores\obj\x86\Debug\PagoAVendedores.Form1.resources
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\PagoAVendedores\PagoAVendedores\obj\x86\Debug\PagoAVendedores.Resources.resources
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\PagoAVendedores\PagoAVendedores\obj\x86\Debug\PagoAVendedores.vbproj.GenerateResource.Cache

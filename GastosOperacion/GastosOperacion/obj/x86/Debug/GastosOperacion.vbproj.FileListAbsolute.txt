@@ -1,0 +1,9 @@
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\GastosOperacion\GastosOperacion\bin\Debug\GastosOperacion.exe
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\GastosOperacion\GastosOperacion\bin\Debug\GastosOperacion.pdb
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\GastosOperacion\GastosOperacion\bin\Debug\GastosOperacion.xml
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\GastosOperacion\GastosOperacion\obj\x86\Debug\WindowsApplication1.Form1.resources
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\GastosOperacion\GastosOperacion\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\GastosOperacion\GastosOperacion\obj\x86\Debug\GastosOperacion.vbproj.GenerateResource.Cache
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\GastosOperacion\GastosOperacion\obj\x86\Debug\GastosOperacion.exe
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\GastosOperacion\GastosOperacion\obj\x86\Debug\GastosOperacion.xml
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\GastosOperacion\GastosOperacion\obj\x86\Debug\GastosOperacion.pdb
