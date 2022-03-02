@@ -1,0 +1,18 @@
+C:\Users\LABJUVENTUS\AppData\Local\Temporary Projects\HELADOS\obj\x86\Debug\HELADOS.Form1.resources
+C:\Users\LABJUVENTUS\AppData\Local\Temporary Projects\HELADOS\obj\x86\Debug\HELADOS.Resources.resources
+C:\Users\LABJUVENTUS\AppData\Local\Temporary Projects\HELADOS\obj\x86\Debug\HELADOS.vbproj.GenerateResource.Cache
+C:\Users\LABJUVENTUS\AppData\Local\Temporary Projects\HELADOS\bin\Debug\HELADOS.exe
+C:\Users\LABJUVENTUS\AppData\Local\Temporary Projects\HELADOS\bin\Debug\HELADOS.pdb
+C:\Users\LABJUVENTUS\AppData\Local\Temporary Projects\HELADOS\bin\Debug\HELADOS.xml
+C:\Users\LABJUVENTUS\AppData\Local\Temporary Projects\HELADOS\obj\x86\Debug\HELADOS.exe
+C:\Users\LABJUVENTUS\AppData\Local\Temporary Projects\HELADOS\obj\x86\Debug\HELADOS.xml
+C:\Users\LABJUVENTUS\AppData\Local\Temporary Projects\HELADOS\obj\x86\Debug\HELADOS.pdb
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\HELADOS\HELADOS\obj\x86\Debug\HELADOS.exe
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\HELADOS\HELADOS\obj\x86\Debug\HELADOS.xml
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\HELADOS\HELADOS\obj\x86\Debug\HELADOS.pdb
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\HELADOS\HELADOS\obj\x86\Debug\HELADOS.Form1.resources
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\HELADOS\HELADOS\obj\x86\Debug\HELADOS.Resources.resources
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\HELADOS\HELADOS\obj\x86\Debug\HELADOS.vbproj.GenerateResource.Cache
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\HELADOS\HELADOS\bin\Debug\HELADOS.exe
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\HELADOS\HELADOS\bin\Debug\HELADOS.pdb
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\HELADOS\HELADOS\bin\Debug\HELADOS.xml

@@ -10,3 +10,9 @@ C:\Users\LABJUVENTUS\AppData\Local\Temporary Projects\CalcularPromedio\obj\x86\D
 C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\CalcularPromedioDiplomado\CalcularPromedio\obj\x86\Debug\CalcularPromedio.exe
 C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\CalcularPromedioDiplomado\CalcularPromedio\obj\x86\Debug\CalcularPromedio.xml
 C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\CalcularPromedioDiplomado\CalcularPromedio\obj\x86\Debug\CalcularPromedio.pdb
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\CalcularPromedioDiplomado\CalcularPromedio\bin\Debug\CalcularPromedio.exe
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\CalcularPromedioDiplomado\CalcularPromedio\bin\Debug\CalcularPromedio.pdb
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\CalcularPromedioDiplomado\CalcularPromedio\bin\Debug\CalcularPromedio.xml
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\CalcularPromedioDiplomado\CalcularPromedio\obj\x86\Debug\CalcularPromedio.Form1.resources
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\CalcularPromedioDiplomado\CalcularPromedio\obj\x86\Debug\CalcularPromedio.Resources.resources
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\CalcularPromedioDiplomado\CalcularPromedio\obj\x86\Debug\CalcularPromedio.vbproj.GenerateResource.Cache
