@@ -114,7 +114,7 @@ Partial Class Form1
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(67, 366)
+        Me.Label1.Location = New System.Drawing.Point(67, 360)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(185, 25)
         Me.Label1.TabIndex = 9
@@ -125,7 +125,7 @@ Partial Class Form1
         Me.lblResultado.AutoSize = True
         Me.lblResultado.BackColor = System.Drawing.Color.Transparent
         Me.lblResultado.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblResultado.Location = New System.Drawing.Point(272, 366)
+        Me.lblResultado.Location = New System.Drawing.Point(272, 360)
         Me.lblResultado.Name = "lblResultado"
         Me.lblResultado.Size = New System.Drawing.Size(36, 25)
         Me.lblResultado.TabIndex = 10
@@ -191,18 +191,18 @@ Partial Class Form1
         '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(32, 429)
+        Me.btnNuevo.Location = New System.Drawing.Point(32, 414)
         Me.btnNuevo.Name = "btnNuevo"
-        Me.btnNuevo.Size = New System.Drawing.Size(97, 23)
+        Me.btnNuevo.Size = New System.Drawing.Size(76, 38)
         Me.btnNuevo.TabIndex = 13
         Me.btnNuevo.Text = "NUEVO"
         Me.btnNuevo.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(277, 429)
+        Me.Button2.Location = New System.Drawing.Point(317, 414)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(105, 23)
+        Me.Button2.Size = New System.Drawing.Size(65, 38)
         Me.Button2.TabIndex = 14
         Me.Button2.Text = "SALIR"
         Me.Button2.UseVisualStyleBackColor = True
@@ -236,7 +236,7 @@ Partial Class Form1
         Me.Controls.Add(Me.cB2)
         Me.Controls.Add(Me.cB1)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "HELADERIA"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
