@@ -39,15 +39,18 @@ Partial Class Form1
         Me.btnNuevo = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
         'cB1
         '
         Me.cB1.AutoSize = True
         Me.cB1.BackColor = System.Drawing.SystemColors.Window
-        Me.cB1.Location = New System.Drawing.Point(264, 110)
+        Me.cB1.Location = New System.Drawing.Point(29, 30)
         Me.cB1.Name = "cB1"
         Me.cB1.Size = New System.Drawing.Size(72, 17)
         Me.cB1.TabIndex = 0
@@ -80,7 +83,7 @@ Partial Class Form1
         '
         Me.cB2.AutoSize = True
         Me.cB2.BackColor = System.Drawing.SystemColors.Window
-        Me.cB2.Location = New System.Drawing.Point(264, 162)
+        Me.cB2.Location = New System.Drawing.Point(29, 71)
         Me.cB2.Name = "cB2"
         Me.cB2.Size = New System.Drawing.Size(80, 17)
         Me.cB2.TabIndex = 3
@@ -91,7 +94,7 @@ Partial Class Form1
         '
         Me.cB3.AutoSize = True
         Me.cB3.BackColor = System.Drawing.SystemColors.Window
-        Me.cB3.Location = New System.Drawing.Point(264, 210)
+        Me.cB3.Location = New System.Drawing.Point(29, 119)
         Me.cB3.Name = "cB3"
         Me.cB3.Size = New System.Drawing.Size(57, 17)
         Me.cB3.TabIndex = 4
@@ -102,7 +105,7 @@ Partial Class Form1
         '
         Me.cB4.AutoSize = True
         Me.cB4.BackColor = System.Drawing.SystemColors.Window
-        Me.cB4.Location = New System.Drawing.Point(264, 258)
+        Me.cB4.Location = New System.Drawing.Point(29, 167)
         Me.cB4.Name = "cB4"
         Me.cB4.Size = New System.Drawing.Size(64, 17)
         Me.cB4.TabIndex = 5
@@ -191,32 +194,68 @@ Partial Class Form1
         '
         'btnNuevo
         '
+        Me.btnNuevo.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnNuevo.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnNuevo.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight
+        Me.btnNuevo.FlatAppearance.BorderSize = 2
+        Me.btnNuevo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.AliceBlue
+        Me.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnNuevo.Location = New System.Drawing.Point(32, 414)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(76, 38)
         Me.btnNuevo.TabIndex = 13
         Me.btnNuevo.Text = "NUEVO"
-        Me.btnNuevo.UseVisualStyleBackColor = True
+        Me.btnNuevo.UseVisualStyleBackColor = False
         '
         'Button2
         '
+        Me.Button2.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.Tomato
+        Me.Button2.FlatAppearance.BorderSize = 2
+        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PapayaWhip
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Location = New System.Drawing.Point(317, 414)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(65, 38)
         Me.Button2.TabIndex = 14
         Me.Button2.Text = "SALIR"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.SystemColors.Window
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Label2.Location = New System.Drawing.Point(48, 26)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(310, 29)
         Me.Label2.TabIndex = 15
         Me.Label2.Text = "HELADOS EL CONO FELIZ"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"FRESA", "VAINILLA", "CHOCOLATE", "LIMON", "ALGODON", "PLATANO", "GANSITO"})
+        Me.ComboBox1.Location = New System.Drawing.Point(235, 91)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(135, 21)
+        Me.ComboBox1.TabIndex = 16
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.GroupBox3.Controls.Add(Me.cB4)
+        Me.GroupBox3.Controls.Add(Me.cB3)
+        Me.GroupBox3.Controls.Add(Me.cB2)
+        Me.GroupBox3.Controls.Add(Me.cB1)
+        Me.GroupBox3.Location = New System.Drawing.Point(235, 141)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(135, 200)
+        Me.GroupBox3.TabIndex = 17
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "EXTRAS"
         '
         'Form1
         '
@@ -224,6 +263,8 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(403, 468)
+        Me.Controls.Add(Me.GroupBox3)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.btnNuevo)
@@ -231,16 +272,14 @@ Partial Class Form1
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.lblResultado)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.cB4)
-        Me.Controls.Add(Me.cB3)
-        Me.Controls.Add(Me.cB2)
-        Me.Controls.Add(Me.cB1)
         Me.Name = "Form1"
         Me.Text = "HELADERIA"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -261,5 +300,7 @@ Partial Class Form1
     Friend WithEvents btnNuevo As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
 
 End Class

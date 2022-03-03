@@ -37,6 +37,20 @@
         Dim resultadotxt As String = "$" + resultado.ToString()
         Return resultadotxt
     End Function
+    Function Completar() As String
+        cB1.Checked = False
+        cB2.Checked = False
+        cB3.Checked = False
+        cB4.Checked = False
+
+        rTipoCono.Checked = False
+        rTipoVaso.Checked = False
+
+        optChico.Checked = False
+        optMediano.Checked = False
+        optGrande.Checked = False
+        Return True
+    End Function
 
     Private Sub CheckBox1_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles cB1.CheckedChanged
         lblResultado.Text = CalcularPrecio()
@@ -69,17 +83,7 @@
 
     Private Sub btnNuevo_Click(sender As System.Object, e As System.EventArgs) Handles btnNuevo.Click
         If MsgBox("¿Deseas calcular un nuevo Helado?", vbYesNo) = vbYes Then
-            cB1.Checked = False
-            cB2.Checked = False
-            cB3.Checked = False
-            cB4.Checked = False
-
-            rTipoCono.Checked = False
-            rTipoVaso.Checked = False
-
-            optChico.Checked = False
-            optMediano.Checked = False
-            optGrande.Checked = False
+            Completar()
         End If
     End Sub
 End Class
