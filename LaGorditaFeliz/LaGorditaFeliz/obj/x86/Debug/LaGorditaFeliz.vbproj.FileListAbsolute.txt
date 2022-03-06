@@ -16,6 +16,6 @@ E:\escuela\visualbasic\LaGorditaFeliz\LaGorditaFeliz\obj\x86\Debug\LaGorditaFeli
 E:\escuela\visualbasic\LaGorditaFeliz\LaGorditaFeliz\bin\Debug\LaGorditaFeliz.exe
 E:\escuela\visualbasic\LaGorditaFeliz\LaGorditaFeliz\bin\Debug\LaGorditaFeliz.pdb
 E:\escuela\visualbasic\LaGorditaFeliz\LaGorditaFeliz\bin\Debug\LaGorditaFeliz.xml
-E:\escuela\visualbasic\LaGorditaFeliz\LaGorditaFeliz\obj\x86\Debug\LaGorditaFeliz.Form1.resources
 E:\escuela\visualbasic\LaGorditaFeliz\LaGorditaFeliz\obj\x86\Debug\LaGorditaFeliz.Resources.resources
 E:\escuela\visualbasic\LaGorditaFeliz\LaGorditaFeliz\obj\x86\Debug\LaGorditaFeliz.vbproj.GenerateResource.Cache
+E:\escuela\visualbasic\LaGorditaFeliz\LaGorditaFeliz\obj\x86\Debug\LaGorditaFeliz.Form1.resources
