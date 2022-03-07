@@ -1,81 +1,80 @@
 ﻿Public Class Form1
 
-    Function ChecarCheckedExtra(ByVal cual) As String
-        Dim verificar As String = cual.Checked().ToString
-        Return verificar
-    End Function
-    Function ActualizarValoresCheked(ByVal cual) As String
-        Dim verificar As String = cual.Checked().ToString
-        Return verificar
-    End Function
-
     Function RetornarStringDeValoresActualizados(ByVal elObjeto) As String
-        If elObjeto.Cheked() = True Then
+        If elObjeto.Checked() = True Then
             Select Case elObjeto.Text
-                Case "cbTomate"
+                Case "TOMATE"
+                    txtTomate.Text = "1"
                     txtTomate.ReadOnly = False
-                Case "cbLechuga"
+                Case "LECHUGA"
+                    txtLechuga.Text = "1"
                     txtLechuga.ReadOnly = False
-                Case "cbChile"
+                Case "JALAPEÑO"
+                    txtChile.Text = "1"
                     txtChile.ReadOnly = False
                 Case Else
-                    txtTomate.Text = "Else2"
+                    txtTomate.Text = elObjeto.Name
                     txtTomate.ReadOnly = False
             End Select
-        Else : elObjeto.Cheked = False
+        Else : elObjeto.Checked() = False
             Select Case elObjeto.Text
-                Case "cbTomate"
+                Case "TOMATE"
                     txtTomate.Text = "N/A"
                     txtTomate.ReadOnly = True
-                Case "cbLechuga"
+                Case "LECHUGA"
                     txtLechuga.Text = "N/A"
                     txtLechuga.ReadOnly = True
-                Case "cbChile"
+                Case "JALAPEÑO"
                     txtChile.Text = "N/A"
                     txtChile.ReadOnly = True
                 Case Else
-                    txtTomate.Text = "Else"
+                    txtTomate.Text = "N/A"
                     txtTomate.ReadOnly = True
             End Select
         End If
         Return 0
     End Function
 
-
-    Function ChecarExtras() As Integer
-        If cbTomate.Checked = True Then
-            txtTomate.Text = "N/A"
-            txtTomate.ReadOnly = True
-        Else
-            txtTomate.Text = "VF"
+    Function DatosPedidoGordita() As String
+        Dim vChile As Integer = 0
+        If cbChile.Checked = True Then
+            vChile = Val(txtTomate.Text)
+        Else : vChile = ""
         End If
-        Dim CantidadElegida As String = Val(txtCantidad.Text)
 
-        Label1.Text = CantidadElegida
-
-        Dim verificarExtraChecked = ChecarCheckedExtra(cbTomate)
-
-        Dim obj2(,) As Integer = {{"Primero", "Segundo"}, {"Fulano", "Fulana"}}
-
-        Dim datosRetornados As String = cbRelleno.Text
-        Return obj2(1, 0)
+        Dim resultadoTotal As String = vChile
+        Return 0
     End Function
+
+    Function BorrarDatos() As String
+        cbTomate.Checked = False
+        RetornarStringDeValoresActualizados(cbTomate)
+        cbLechuga.Checked = False
+        RetornarStringDeValoresActualizados(cbLechuga)
+        cbChile.Checked = False
+        RetornarStringDeValoresActualizados(cbChile)
+        Return 0
+    End Function
+
     Function AgregarDato() As String
+        RetornarStringDeValoresActualizados(cbTomate)
+        RetornarStringDeValoresActualizados(cbChile)
+        RetornarStringDeValoresActualizados(cbLechuga)
 
-        Dim NombreElegida As String = cbRelleno.Text
-        Dim CantidadElegida As String = Val(txtCantidad.Text)
 
-        Dim verificarExtraChecked = ChecarCheckedExtra(cbTomate)
-        Label1.Text = verificarExtraChecked
-
-        Dim obj2(,) As String = {{"Primero", "Segundo"}, {"Fulano", "Fulana"}}
 
         Dim datosRetornados As String = cbRelleno.Text
-        Return obj2(1, 0)
+        Return True
     End Function
 
 
     Private Sub btnAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregar.Click
         cbRelleno.Text = AgregarDato()
+        MsgBox("Si")
+        RetornarStringDeValoresActualizados(cbTomate)
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        BorrarDatos()
     End Sub
 End Class

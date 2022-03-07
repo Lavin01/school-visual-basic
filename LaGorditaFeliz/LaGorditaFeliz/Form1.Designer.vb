@@ -500,7 +500,6 @@ Partial Class Form1
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents cbTomate As System.Windows.Forms.CheckBox
     Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
     Friend WithEvents TabPage1 As System.Windows.Forms.TabPage
     Friend WithEvents TabPage2 As System.Windows.Forms.TabPage
@@ -525,5 +524,6 @@ Partial Class Form1
     Friend WithEvents ListBox2 As System.Windows.Forms.ListBox
     Friend WithEvents txtCantidad As System.Windows.Forms.TextBox
     Friend WithEvents Label11 As System.Windows.Forms.Label
+    Public WithEvents cbTomate As System.Windows.Forms.CheckBox
 
 End Class
