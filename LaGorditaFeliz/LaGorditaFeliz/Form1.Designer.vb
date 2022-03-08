@@ -33,9 +33,9 @@ Partial Class Form1
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.cbTomate = New System.Windows.Forms.CheckBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
@@ -52,9 +52,11 @@ Partial Class Form1
         Me.cbChile = New System.Windows.Forms.CheckBox()
         Me.cbLechuga = New System.Windows.Forms.CheckBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.TabControl2 = New System.Windows.Forms.TabControl()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.lstPedidoActual = New System.Windows.Forms.ListBox()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.ListBox2 = New System.Windows.Forms.ListBox()
         Me.txtCantidad = New System.Windows.Forms.TextBox()
@@ -62,6 +64,7 @@ Partial Class Form1
         Me.GroupBox1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
+        Me.TabPage2.SuspendLayout()
         Me.TabControl2.SuspendLayout()
         Me.TabPage3.SuspendLayout()
         Me.TabPage4.SuspendLayout()
@@ -71,11 +74,11 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Gill Sans MT", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Gill Sans MT", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(272, 53)
+        Me.Label1.Location = New System.Drawing.Point(222, 40)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(219, 30)
+        Me.Label1.Size = New System.Drawing.Size(336, 45)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "LA GORDITA FELIZ"
         '
@@ -84,6 +87,8 @@ Partial Class Form1
         Me.btnAgregar.BackColor = System.Drawing.Color.Transparent
         Me.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.btnAgregar.FlatAppearance.BorderSize = 0
+        Me.btnAgregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.btnAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAgregar.Font = New System.Drawing.Font("Gill Sans MT", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAgregar.ForeColor = System.Drawing.Color.Snow
@@ -108,6 +113,7 @@ Partial Class Form1
         'cbRelleno
         '
         Me.cbRelleno.FormattingEnabled = True
+        Me.cbRelleno.Items.AddRange(New Object() {"CARNITAS", "FRIJOLES", "MACHACADO", "HUEVO CON FRIJOLES", "HUEVO CON JAMON", "PICADILLO"})
         Me.cbRelleno.Location = New System.Drawing.Point(282, 145)
         Me.cbRelleno.Name = "cbRelleno"
         Me.cbRelleno.Size = New System.Drawing.Size(121, 21)
@@ -138,7 +144,7 @@ Partial Class Form1
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label4.Location = New System.Drawing.Point(11, 121)
+        Me.Label4.Location = New System.Drawing.Point(11, 90)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(203, 19)
         Me.Label4.TabIndex = 9
@@ -147,7 +153,8 @@ Partial Class Form1
         'ComboBox2
         '
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(47, 143)
+        Me.ComboBox2.Items.AddRange(New Object() {"PRESENCIAL", "PARA LLEVAR"})
+        Me.ComboBox2.Location = New System.Drawing.Point(47, 112)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(129, 21)
         Me.ComboBox2.TabIndex = 8
@@ -155,7 +162,7 @@ Partial Class Form1
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(44, 121)
+        Me.Label5.Location = New System.Drawing.Point(44, 90)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(0, 13)
         Me.Label5.TabIndex = 7
@@ -163,9 +170,9 @@ Partial Class Form1
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.Label9)
-        Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.TextBox1)
@@ -179,11 +186,23 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "DATOS DEL PEDIDO"
         '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Maroon
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(15, 223)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(199, 46)
+        Me.Button1.TabIndex = 16
+        Me.Button1.Text = "ANOTAR"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
         'Label10
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Lucida Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(142, 231)
+        Me.Label10.Location = New System.Drawing.Point(91, 184)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(38, 17)
         Me.Label10.TabIndex = 15
@@ -193,29 +212,11 @@ Partial Class Form1
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(112, 202)
+        Me.Label9.Location = New System.Drawing.Point(61, 155)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(102, 20)
         Me.Label9.TabIndex = 14
         Me.Label9.Text = "Nro. Pedido"
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Gill Sans MT", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.Snow
-        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button1.Location = New System.Drawing.Point(6, 196)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(87, 78)
-        Me.Button1.TabIndex = 13
-        Me.Button1.Text = "DATA"
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button1.UseVisualStyleBackColor = False
         '
         'Label6
         '
@@ -383,13 +384,32 @@ Partial Class Form1
         '
         'TabPage2
         '
+        Me.TabPage2.Controls.Add(Me.Label12)
+        Me.TabPage2.Controls.Add(Me.RichTextBox1)
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
         Me.TabPage2.Size = New System.Drawing.Size(170, 205)
         Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "TabPage2"
+        Me.TabPage2.Text = "Especificaciones"
         Me.TabPage2.UseVisualStyleBackColor = True
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(6, 13)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(126, 26)
+        Me.Label12.TabIndex = 1
+        Me.Label12.Text = "Escribir especificaciones " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "del pedido"
+        '
+        'RichTextBox1
+        '
+        Me.RichTextBox1.Location = New System.Drawing.Point(6, 42)
+        Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.Size = New System.Drawing.Size(158, 157)
+        Me.RichTextBox1.TabIndex = 0
+        Me.RichTextBox1.Text = ""
         '
         'TabControl2
         '
@@ -403,7 +423,7 @@ Partial Class Form1
         '
         'TabPage3
         '
-        Me.TabPage3.Controls.Add(Me.ListBox1)
+        Me.TabPage3.Controls.Add(Me.lstPedidoActual)
         Me.TabPage3.Location = New System.Drawing.Point(4, 22)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
@@ -412,13 +432,13 @@ Partial Class Form1
         Me.TabPage3.Text = "PEDIDO ACTUAL"
         Me.TabPage3.UseVisualStyleBackColor = True
         '
-        'ListBox1
+        'lstPedidoActual
         '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(6, 6)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(233, 472)
-        Me.ListBox1.TabIndex = 0
+        Me.lstPedidoActual.FormattingEnabled = True
+        Me.lstPedidoActual.Location = New System.Drawing.Point(6, 6)
+        Me.lstPedidoActual.Name = "lstPedidoActual"
+        Me.lstPedidoActual.Size = New System.Drawing.Size(233, 472)
+        Me.lstPedidoActual.TabIndex = 0
         '
         'TabPage4
         '
@@ -482,6 +502,8 @@ Partial Class Form1
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
+        Me.TabPage2.ResumeLayout(False)
+        Me.TabPage2.PerformLayout()
         Me.TabControl2.ResumeLayout(False)
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage4.ResumeLayout(False)
@@ -516,14 +538,16 @@ Partial Class Form1
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
-    Public WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents TabControl2 As System.Windows.Forms.TabControl
     Friend WithEvents TabPage3 As System.Windows.Forms.TabPage
-    Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
+    Friend WithEvents lstPedidoActual As System.Windows.Forms.ListBox
     Friend WithEvents TabPage4 As System.Windows.Forms.TabPage
     Friend WithEvents ListBox2 As System.Windows.Forms.ListBox
     Friend WithEvents txtCantidad As System.Windows.Forms.TextBox
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Public WithEvents cbTomate As System.Windows.Forms.CheckBox
+    Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Label12 As System.Windows.Forms.Label
 
 End Class

@@ -35,17 +35,6 @@
         Return 0
     End Function
 
-    Function DatosPedidoGordita() As String
-        Dim vChile As Integer = 0
-        If cbChile.Checked = True Then
-            vChile = Val(txtTomate.Text)
-        Else : vChile = ""
-        End If
-
-        Dim resultadoTotal As String = vChile
-        Return 0
-    End Function
-
     Function BorrarDatos() As String
         cbTomate.Checked = False
         RetornarStringDeValoresActualizados(cbTomate)
@@ -57,11 +46,21 @@
     End Function
 
     Function AgregarDato() As String
-        RetornarStringDeValoresActualizados(cbTomate)
-        RetornarStringDeValoresActualizados(cbChile)
-        RetornarStringDeValoresActualizados(cbLechuga)
-
-
+        If cbRelleno.Text = "" Then
+            Return False
+        End If
+        lstPedidoActual.Items.Add("[0] ----------------------------------")
+        lstPedidoActual.Items.Add("Relleno Elegido: " + cbRelleno.Text + " (" + txtCantidad.Text + ")")
+        If Val(txtTomate.Text) > 0 Then
+            lstPedidoActual.Items.Add("Extra Tomate: " + txtTomate.Text)
+        End If
+        If Val(txtChile.Text) > 0 Then
+            lstPedidoActual.Items.Add("Extra Jalaño: " + txtChile.Text)
+        End If
+        If Val(txtLechuga.Text) > 0 Then
+            lstPedidoActual.Items.Add("Extra Lechuga: " + txtLechuga.Text)
+        End If
+        lstPedidoActual.Items.Add("[0] ----------------------------------")
 
         Dim datosRetornados As String = cbRelleno.Text
         Return True
@@ -69,12 +68,40 @@
 
 
     Private Sub btnAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregar.Click
-        cbRelleno.Text = AgregarDato()
-        MsgBox("Si")
-        RetornarStringDeValoresActualizados(cbTomate)
+        AgregarDato()
+        MsgBox("Agregado")
+        BorrarDatos()
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         BorrarDatos()
+    End Sub
+
+    Private Sub ListBox2_SelectedIndexChanged(sender As System.Object, e As System.EventArgs) Handles ListBox2.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+        lstPedidoActual.Items.Add("                     LA GORDITA FELIZ")
+        lstPedidoActual.Items.Add("                     Tel: 868-000-0000")
+        lstPedidoActual.Items.Add("                     RFC: GORDIS55CA1DC")
+        lstPedidoActual.Items.Add("----------------------- PEDIDO ACTUAL --------------------------------------------")
+
+        ListBox2.Items.Add("                     LA GORDITA FELIZ")
+        ListBox2.Items.Add("                     Tel: 868-000-0000")
+        ListBox2.Items.Add("                     RFC: GORDIS55CA1DC")
+        ListBox2.Items.Add("---------------------------------------------------------------------------------")
+    End Sub
+
+    Private Sub cbTomate_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles cbTomate.CheckedChanged
+        RetornarStringDeValoresActualizados(cbTomate)
+    End Sub
+
+    Private Sub cbLechuga_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles cbLechuga.CheckedChanged
+        RetornarStringDeValoresActualizados(cbLechuga)
+    End Sub
+
+    Private Sub cbChile_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles cbChile.CheckedChanged
+        RetornarStringDeValoresActualizados(cbChile)
     End Sub
 End Class

@@ -1,0 +1,9 @@
+C:\Users\LABJUVENTUS\AppData\Local\Temporary Projects\ListBoxPractica\bin\Debug\ListBoxPractica.exe
+C:\Users\LABJUVENTUS\AppData\Local\Temporary Projects\ListBoxPractica\bin\Debug\ListBoxPractica.pdb
+C:\Users\LABJUVENTUS\AppData\Local\Temporary Projects\ListBoxPractica\bin\Debug\ListBoxPractica.xml
+C:\Users\LABJUVENTUS\AppData\Local\Temporary Projects\ListBoxPractica\obj\x86\Debug\ListBoxPractica.Form1.resources
+C:\Users\LABJUVENTUS\AppData\Local\Temporary Projects\ListBoxPractica\obj\x86\Debug\ListBoxPractica.Resources.resources
+C:\Users\LABJUVENTUS\AppData\Local\Temporary Projects\ListBoxPractica\obj\x86\Debug\ListBoxPractica.vbproj.GenerateResource.Cache
+C:\Users\LABJUVENTUS\AppData\Local\Temporary Projects\ListBoxPractica\obj\x86\Debug\ListBoxPractica.exe
+C:\Users\LABJUVENTUS\AppData\Local\Temporary Projects\ListBoxPractica\obj\x86\Debug\ListBoxPractica.xml
+C:\Users\LABJUVENTUS\AppData\Local\Temporary Projects\ListBoxPractica\obj\x86\Debug\ListBoxPractica.pdb
