@@ -1,5 +1,7 @@
 ﻿Public Class Form1
 
+
+    Public RandomVariableGlobal As String = "test"
     Function RetornarStringDeValoresActualizados(ByVal elObjeto) As String
         If elObjeto.Checked() = True Then
             Select Case elObjeto.Text
@@ -45,11 +47,14 @@
         Return 0
     End Function
 
-    Function AgregarDato() As String
+    Function AgregarDato() As Boolean
         If cbRelleno.Text = "" Then
             Return False
         End If
-        lstPedidoActual.Items.Add("[0] ----------------------------------")
+        If Val(txtCantidad.Text) < 1 Or txtCantidad.Text = "" Then
+            Return False
+        End If
+        lstPedidoActual.Items.Add("[0] ----------------------------------" + RandomVariableGlobal)
         lstPedidoActual.Items.Add("Relleno Elegido: " + cbRelleno.Text + " (" + txtCantidad.Text + ")")
         If Val(txtTomate.Text) > 0 Then
             lstPedidoActual.Items.Add("Extra Tomate: " + txtTomate.Text)
@@ -60,7 +65,9 @@
         If Val(txtLechuga.Text) > 0 Then
             lstPedidoActual.Items.Add("Extra Lechuga: " + txtLechuga.Text)
         End If
-        lstPedidoActual.Items.Add("[0] ----------------------------------")
+        lstPedidoActual.Items.Add("[0] ----------------------------------" + RandomVariableGlobal)
+
+        RandomVariableGlobal = RandomVariableGlobal + ",AnotherTest"
 
         Dim datosRetornados As String = cbRelleno.Text
         Return True
@@ -68,7 +75,10 @@
 
 
     Private Sub btnAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregar.Click
-        AgregarDato()
+        If AgregarDato() = False Then
+            MsgBox("Faltan datos")
+            Return
+        End If
         MsgBox("Agregado")
         BorrarDatos()
     End Sub
