@@ -92,6 +92,8 @@
     End Sub
 
     Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+        imgProd.BackgroundImage = Image.FromFile("C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\LaGorditaFeliz\LaGorditaFeliz\Resources\plogo.png")
+        imgProd.BackgroundImageLayout = ImageLayout.Zoom
         lstPedidoActual.Items.Add("                     LA GORDITA FELIZ")
         lstPedidoActual.Items.Add("                     Tel: 868-000-0000")
         lstPedidoActual.Items.Add("                     RFC: GORDIS55CA1DC")
@@ -113,5 +115,25 @@
 
     Private Sub cbChile_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles cbChile.CheckedChanged
         RetornarStringDeValoresActualizados(cbChile)
+    End Sub
+
+    Private Sub cbRelleno_SelectedIndexChanged(sender As System.Object, e As System.EventArgs) Handles cbRelleno.SelectedIndexChanged
+        Select Case cbRelleno.Text
+            Case "CARNITAS"
+                imgProd.BackgroundImage = Image.FromFile("C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\LaGorditaFeliz\LaGorditaFeliz\Resources\gcarnitas.jpg")
+            Case "FRIJOLES"
+                imgProd.BackgroundImage = Image.FromFile("C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\LaGorditaFeliz\LaGorditaFeliz\Resources\gfrijoles.jpg")
+            Case "MACHACADO"
+                imgProd.BackgroundImage = Image.FromFile("C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\LaGorditaFeliz\LaGorditaFeliz\Resources\gmachacado.jpg")
+            Case "HUEVO CON FRIJOLES"
+                imgProd.BackgroundImage = Image.FromFile("C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\LaGorditaFeliz\LaGorditaFeliz\Resources\gfrijoleshuevo.jpg")
+            Case "HUEVO CON JAMON"
+                imgProd.BackgroundImage = Image.FromFile("C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\LaGorditaFeliz\LaGorditaFeliz\Resources\gjamonhuevo.jpg")
+            Case "PICADILLO"
+                imgProd.BackgroundImage = Image.FromFile("C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\LaGorditaFeliz\LaGorditaFeliz\Resources\gpicadillo.jpg")
+
+            Case Else
+                imgProd.BackgroundImage = Image.FromFile("C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\LaGorditaFeliz\LaGorditaFeliz\Resources\plogo.png")
+        End Select
     End Sub
 End Class

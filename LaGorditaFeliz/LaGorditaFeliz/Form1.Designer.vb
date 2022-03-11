@@ -61,6 +61,8 @@ Partial Class Form1
         Me.ListBox2 = New System.Windows.Forms.ListBox()
         Me.txtCantidad = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
+        Me.imgProd = New System.Windows.Forms.PictureBox()
+        Me.Label13 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -68,6 +70,7 @@ Partial Class Form1
         Me.TabControl2.SuspendLayout()
         Me.TabPage3.SuspendLayout()
         Me.TabPage4.SuspendLayout()
+        CType(Me.imgProd, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -478,6 +481,29 @@ Partial Class Form1
         Me.Label11.TabIndex = 15
         Me.Label11.Text = "CANTIDAD"
         '
+        'imgProd
+        '
+        Me.imgProd.BackColor = System.Drawing.Color.Transparent
+        Me.imgProd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.imgProd.ImageLocation = ""
+        Me.imgProd.Location = New System.Drawing.Point(12, 469)
+        Me.imgProd.Name = "imgProd"
+        Me.imgProd.Size = New System.Drawing.Size(231, 98)
+        Me.imgProd.TabIndex = 16
+        Me.imgProd.TabStop = False
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.BackColor = System.Drawing.Color.Transparent
+        Me.Label13.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label13.Location = New System.Drawing.Point(73, 447)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(102, 19)
+        Me.Label13.TabIndex = 17
+        Me.Label13.Text = "PRODUCTO"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -485,6 +511,8 @@ Partial Class Form1
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(916, 579)
+        Me.Controls.Add(Me.Label13)
+        Me.Controls.Add(Me.imgProd)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.txtCantidad)
         Me.Controls.Add(Me.TabControl2)
@@ -507,6 +535,7 @@ Partial Class Form1
         Me.TabControl2.ResumeLayout(False)
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage4.ResumeLayout(False)
+        CType(Me.imgProd, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -549,5 +578,7 @@ Partial Class Form1
     Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents imgProd As System.Windows.Forms.PictureBox
+    Friend WithEvents Label13 As System.Windows.Forms.Label
 
 End Class

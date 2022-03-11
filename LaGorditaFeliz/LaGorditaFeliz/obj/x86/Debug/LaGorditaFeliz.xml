@@ -15,6 +15,42 @@ LaGorditaFeliz
   Overrides the current thread's CurrentUICulture property for all
   resource lookups using this strongly typed resource class.
 </summary>
+</member><member name="P:LaGorditaFeliz.My.Resources.Resources.gcarnitas">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:LaGorditaFeliz.My.Resources.Resources.gcarnitas1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:LaGorditaFeliz.My.Resources.Resources.gfrijoles">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:LaGorditaFeliz.My.Resources.Resources.gfrijoleshuevo">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:LaGorditaFeliz.My.Resources.Resources.gjamonhuevo">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:LaGorditaFeliz.My.Resources.Resources.gmachacado">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:LaGorditaFeliz.My.Resources.Resources.gmachacado1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:LaGorditaFeliz.My.Resources.Resources.gpicadillo">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:LaGorditaFeliz.My.Resources.Resources.plogo">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="T:LaGorditaFeliz.My.Resources.Resources">
 	<summary>
   A strongly-typed resource class, for looking up localized strings, etc.
