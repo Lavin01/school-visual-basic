@@ -1,99 +1,21 @@
 <html>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <div id="container">
-        
-        <input type="number" id="cool" O/>
-    <!-- El tamaño del canvas lo cambio en el script -->
-      <canvas id="fx" width="0" height="0"></canvas>
-    </div>
     
     <script>
     
-$(document).ready(function() {
-        const input = document.querySelector('input');
-    const log = document.getElementById('valores');
-
-    input.addEventListener('input', updateValue);
-
-    function updateValue(e) {
-        console.log(e.srcElement.value);
-        scale = e.srcElement.value;
-        drawis();
-    }
-
-  var windowWidth = window.innerWidth;
-  var windowHeight = window.innerHeight;
-
-    //Establezco una escala que posteriormente aplico
-  var scale = 50;
-
-  var cv = document.getElementById("fx");
-  cv.height = windowHeight;
-  cv.width = windowWidth;
-
-  var ctx = cv.getContext("2d");
-
-   //Aquí traslado todo el contexto al centro de la pantalla
-  ctx.translate((windowWidth / 2),(windowHeight / 2));
-
-//Esta función simplemente dibuja los ejes (es lo de menos)
-  drawaxis();
-  function drawaxis() {
-
-    var x_axis = {
-      x: -windowWidth / 2,
-      y: 0,
-      xf: windowWidth / 2,
-      yf: 0
-    }
-
-    var y_axis = {
-      x: 0,
-      y: -windowHeight / 2,
-      xf: 0,
-      yf: windowHeight /2
-    }
-
-    ctx.beginPath();
-    ctx.moveTo(x_axis["x"],x_axis["y"]);
-    ctx.lineTo(x_axis["xf"],x_axis["yf"]);
-    ctx.stroke();
-    ctx.closePath();
-
-    ctx.beginPath();
-    ctx.moveTo(y_axis["x"],y_axis["y"]);
-    ctx.lineTo(y_axis["xf"],y_axis["yf"]);
-    ctx.stroke();
-    ctx.closePath();
-
-  }
-
-    var interval = 0.01;
-
-    for (x = -windowWidth; x < windowWidth; x = x + interval) {
-      drawfx(x, interval);
-    }
-
-    function drawfx(x,interval) {
-        var x0 = x,
-            y0 = Math.pow(x0,2),
-            x1 = x + interval,
-            y1 = Math.pow(x1,2);
-
-        x0 = x0*scale;
-        y0 = y0*scale;
-        x1 = x1*scale;
-        y1 = y1*scale;
-
-        ctx.beginPath();
-        ctx.moveTo(x0, y0);
-        ctx.lineTo(x1, y1);
-        ctx.stroke();
-        ctx.closePath();
-    }
-
-    });
+        let stringEjemplo = ''
+        for(x = 0; x++; x > 10){
+            console.log('Si')
+            stringEjemplo = 'Si,Pero,Esta,Siendo,Dividido,Cada,Vez,Que,Hago,Comas Si' + ',Si,Pero,Esta,Siendo,Dividido,Cada,Vez,Que,Hago,Comas Si'
+        }
         
+        let arrayEjemplo = stringEjemplo.split(',')
         
+        console.log(arrayEjemplo)
+        
+        console.log(arrayEjemplo[arrayEjemplo.length - 1])
+        console.log(arrayEjemplo[9])
+        console.log('\n\n')
+        arrayEjemplo.forEach(element => console.log(element));
+
     </script>
 </html>
