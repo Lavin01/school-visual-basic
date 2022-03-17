@@ -1,0 +1,18 @@
+C:\Users\LABJUVENTUS\AppData\Local\Temporary Projects\LaPesaFeliz\bin\Debug\LaPesaFeliz.exe
+C:\Users\LABJUVENTUS\AppData\Local\Temporary Projects\LaPesaFeliz\bin\Debug\LaPesaFeliz.pdb
+C:\Users\LABJUVENTUS\AppData\Local\Temporary Projects\LaPesaFeliz\bin\Debug\LaPesaFeliz.xml
+C:\Users\LABJUVENTUS\AppData\Local\Temporary Projects\LaPesaFeliz\obj\x86\Debug\LaPesaFeliz.Form1.resources
+C:\Users\LABJUVENTUS\AppData\Local\Temporary Projects\LaPesaFeliz\obj\x86\Debug\LaPesaFeliz.Resources.resources
+C:\Users\LABJUVENTUS\AppData\Local\Temporary Projects\LaPesaFeliz\obj\x86\Debug\LaPesaFeliz.vbproj.GenerateResource.Cache
+C:\Users\LABJUVENTUS\AppData\Local\Temporary Projects\LaPesaFeliz\obj\x86\Debug\LaPesaFeliz.exe
+C:\Users\LABJUVENTUS\AppData\Local\Temporary Projects\LaPesaFeliz\obj\x86\Debug\LaPesaFeliz.xml
+C:\Users\LABJUVENTUS\AppData\Local\Temporary Projects\LaPesaFeliz\obj\x86\Debug\LaPesaFeliz.pdb
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\LaPesaFeliz\LaPesaFeliz\obj\x86\Debug\LaPesaFeliz.exe
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\LaPesaFeliz\LaPesaFeliz\obj\x86\Debug\LaPesaFeliz.xml
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\LaPesaFeliz\LaPesaFeliz\obj\x86\Debug\LaPesaFeliz.pdb
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\LaPesaFeliz\LaPesaFeliz\bin\Debug\LaPesaFeliz.exe
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\LaPesaFeliz\LaPesaFeliz\bin\Debug\LaPesaFeliz.pdb
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\LaPesaFeliz\LaPesaFeliz\bin\Debug\LaPesaFeliz.xml
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\LaPesaFeliz\LaPesaFeliz\obj\x86\Debug\LaPesaFeliz.Form1.resources
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\LaPesaFeliz\LaPesaFeliz\obj\x86\Debug\LaPesaFeliz.Resources.resources
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\LaPesaFeliz\LaPesaFeliz\obj\x86\Debug\LaPesaFeliz.vbproj.GenerateResource.Cache
