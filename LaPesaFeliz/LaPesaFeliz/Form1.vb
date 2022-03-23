@@ -4,32 +4,45 @@
     Dim planMedio As Integer = 400
     Dim planAvanzado As Integer = 600
 
+    Dim ningunObjeto As Object
+
     Dim valorItems As String = ""
-    Function returnValuesUpdated(ByVal elObjeto) As String
+    Function returnValuesUpdated(ByVal elObjeto As Object) As String
         Dim ValorActual As Double = 0
-        If elObjeto.Checked() = True Then
-            Select elObjeto.Name
-                Case "radInicial"
-                    ValorActual += planInicial
-                Case "radMedio"
-                    ValorActual += planMedio
-                Case "radAvanzado"
-                    ValorActual += planAvanzado
-            End Select
+        Dim ValorTxt = ""
+        If elObjeto IsNot Nothing Then
+            If elObjeto.Checked() = True Then
+                Select Case elObjeto.Name
+                    Case "radInicial"
+                        ValorActual += planInicial
+                        ValorTxt = elObjeto.Text
+                    Case "radMedio"
+                        ValorActual += planMedio
+                        ValorTxt = elObjeto.Text
+                    Case "radAvanzado"
+                        ValorActual += planAvanzado
+                        ValorTxt = elObjeto.Text
+                End Select
+            End If
         End If
 
         lstTicket.Items.Clear()
         Dim testArray() As String = Split(valorItems, ",")
+
+        Dim valorDinero() As String = Split(valorItems, "[")
         Dim lastNonEmpty As Integer = -1
         lstTicket.Items.Add("                     LA PESA FELIZ")
         lstTicket.Items.Add("                     Tel: 868-000-0000")
         lstTicket.Items.Add("                     RFC: GPSDCS55CA1DC")
         lstTicket.Items.Add("------------- CLIENTES REGISTRADOS ---------------------")
-
+        If elObjeto IsNot Nothing Then
+            lstTicket.Items.Add(elObjeto.Text)
+        End If
         For i As Integer = 0 To testArray.Length - 1
             If testArray(i) <> "" Then
                 lstTicket.Items.Add(testArray(i))
             End If
+
         Next
         Return ValorActual
     End Function
@@ -43,6 +56,8 @@
     End Sub
 
     Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'LAPESAFELIZ_BDDataSet.clientes' table. You can move, or remove it, as needed.
+        Me.ClientesTableAdapter.Fill(Me.LAPESAFELIZ_BDDataSet.clientes)
         lstTicket.Items.Add("                     LA PESA FELIZ")
         lstTicket.Items.Add("                     Tel: 868-000-0000")
         lstTicket.Items.Add("                     RFC: GPSDCS55CA1DC")
@@ -73,6 +88,13 @@
             Valor = checkedListBox.CheckedItems(i)
             valorItems += Valor + ","
         Next
-        returnValuesUpdated(radInicial)
+        returnValuesUpdated(Nothing)
+    End Sub
+
+    Private Sub ClientesBindingNavigatorSaveItem_Click(sender As System.Object, e As System.EventArgs) Handles ClientesBindingNavigatorSaveItem.Click
+        Me.Validate()
+        Me.ClientesBindingSource.EndEdit()
+        Me.TableAdapterManager.UpdateAll(Me.LAPESAFELIZ_BDDataSet)
+
     End Sub
 End Class

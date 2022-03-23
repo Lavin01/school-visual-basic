@@ -79,6 +79,11 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="LAPESAFELIZ_BDDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LAPESAFELIZ_BDDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -107,6 +112,18 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
+    <None Include="LAPESAFELIZ_BDDataSet.xsc">
+      <DependentUpon>LAPESAFELIZ_BDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LAPESAFELIZ_BDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LAPESAFELIZ_BDDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LAPESAFELIZ_BDDataSet.xss">
+      <DependentUpon>LAPESAFELIZ_BDDataSet.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -125,6 +142,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\kisspng-computer-icons-user-clip-art-user-5abf13db5624e4.1771742215224718993529.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LAPESAFELIZ_BD.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
