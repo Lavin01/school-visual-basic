@@ -1,0 +1,11 @@
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\LaLibreriaFeliz\LaLibreriaFeliz\bin\Debug\LaLibreriaFeliz.exe
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\LaLibreriaFeliz\LaLibreriaFeliz\bin\Debug\LaLibreriaFeliz.pdb
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\LaLibreriaFeliz\LaLibreriaFeliz\bin\Debug\LaLibreriaFeliz.xml
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\LaLibreriaFeliz\LaLibreriaFeliz\obj\x86\Debug\LaLibreriaFeliz.Form1.resources
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\LaLibreriaFeliz\LaLibreriaFeliz\obj\x86\Debug\LaLibreriaFeliz.Resources.resources
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\LaLibreriaFeliz\LaLibreriaFeliz\obj\x86\Debug\LaLibreriaFeliz.vbproj.GenerateResource.Cache
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\LaLibreriaFeliz\LaLibreriaFeliz\obj\x86\Debug\LaLibreriaFeliz.exe
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\LaLibreriaFeliz\LaLibreriaFeliz\obj\x86\Debug\LaLibreriaFeliz.xml
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\LaLibreriaFeliz\LaLibreriaFeliz\obj\x86\Debug\LaLibreriaFeliz.pdb
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\LaLibreriaFeliz\LaLibreriaFeliz\bin\Debug\LIBRERIA.accdb
+C:\Users\LABJUVENTUS\Documents\PRACTICASVB\school-visual-basic\LaLibreriaFeliz\LaLibreriaFeliz\bin\Debug\LaLibreriaFeliz.exe.config
