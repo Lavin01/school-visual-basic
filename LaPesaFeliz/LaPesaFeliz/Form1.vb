@@ -7,23 +7,21 @@
     Dim ningunObjeto As Object
 
     Dim valorItems As String = ""
-    Function returnValuesUpdated(ByVal elObjeto As Object) As String
+    Function returnValuesUpdated() As String
         Dim ValorActual As Double = 0
         Dim ValorTxt = ""
-        If elObjeto IsNot Nothing Then
-            If elObjeto.Checked() = True Then
-                Select Case elObjeto.Name
-                    Case "radInicial"
-                        ValorActual += planInicial
-                        ValorTxt = elObjeto.Text
-                    Case "radMedio"
-                        ValorActual += planMedio
-                        ValorTxt = elObjeto.Text
-                    Case "radAvanzado"
-                        ValorActual += planAvanzado
-                        ValorTxt = elObjeto.Text
-                End Select
-            End If
+
+        If radInicial.Checked() = True Then
+            ValorActual += planInicial
+            ValorTxt = radInicial.Text
+        End If
+        If radMedio.Checked() = True Then
+            ValorActual += planMedio
+            ValorTxt = radMedio.Text
+        End If
+        If radAvanzado.Checked() = True Then
+            ValorActual += planAvanzado
+            ValorTxt = radMedio.Text
         End If
 
         lstTicket.Items.Clear()
@@ -35,8 +33,14 @@
         lstTicket.Items.Add("                     Tel: 868-000-0000")
         lstTicket.Items.Add("                     RFC: GPSDCS55CA1DC")
         lstTicket.Items.Add("------------- CLIENTES REGISTRADOS ---------------------")
-        If elObjeto IsNot Nothing Then
-            lstTicket.Items.Add(elObjeto.Text)
+        If radInicial.Checked() = True Then
+            lstTicket.Items.Add(radInicial.Text)
+        End If
+        If radMedio.Checked() = True Then
+            lstTicket.Items.Add(radMedio.Text)
+        End If
+        If radAvanzado.Checked() = True Then
+            lstTicket.Items.Add(radAvanzado.Text)
         End If
         For i As Integer = 0 To testArray.Length - 1
             If testArray(i) <> "" Then
@@ -69,15 +73,15 @@
     End Sub
 
     Private Sub radInicial_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles radInicial.CheckedChanged
-        lblTotal.Text = returnValuesUpdated(radInicial)
+        lblTotal.Text = returnValuesUpdated()
     End Sub
 
     Private Sub radMedio_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles radMedio.CheckedChanged
-        lblTotal.Text = returnValuesUpdated(radMedio)
+        lblTotal.Text = returnValuesUpdated()
     End Sub
 
     Private Sub radAvanzado_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles radAvanzado.CheckedChanged
-        lblTotal.Text = returnValuesUpdated(radAvanzado)
+        lblTotal.Text = returnValuesUpdated()
     End Sub
 
     Private Sub checkedListBox_ItemCheck(sender As Object, e As System.Windows.Forms.ItemCheckEventArgs) Handles checkedListBox.ItemCheck
@@ -88,7 +92,7 @@
             Valor = checkedListBox.CheckedItems(i)
             valorItems += Valor + ","
         Next
-        returnValuesUpdated(Nothing)
+        returnValuesUpdated()
     End Sub
 
     Private Sub ClientesBindingNavigatorSaveItem_Click(sender As System.Object, e As System.EventArgs) Handles ClientesBindingNavigatorSaveItem.Click

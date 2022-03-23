@@ -24,8 +24,6 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Dim IdLabel As System.Windows.Forms.Label
-        Dim NombreLabel As System.Windows.Forms.Label
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -49,9 +47,6 @@ Partial Class Form1
         Me.Button3 = New System.Windows.Forms.Button()
         Me.lstTicket = New System.Windows.Forms.ListBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.txtDireccion = New System.Windows.Forms.TextBox()
-        Me.txtPhone = New System.Windows.Forms.TextBox()
-        Me.txtMail = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.lblTotal = New System.Windows.Forms.Label()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
@@ -74,8 +69,9 @@ Partial Class Form1
         Me.ClientesBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.txtNoC = New System.Windows.Forms.TextBox()
         Me.txtName = New System.Windows.Forms.TextBox()
-        IdLabel = New System.Windows.Forms.Label()
-        NombreLabel = New System.Windows.Forms.Label()
+        Me.txtDireccion = New System.Windows.Forms.TextBox()
+        Me.txtPhone = New System.Windows.Forms.TextBox()
+        Me.txtMail = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -318,27 +314,6 @@ Partial Class Form1
         Me.Label6.TabIndex = 22
         Me.Label6.Text = "TICKET"
         '
-        'txtDireccion
-        '
-        Me.txtDireccion.Location = New System.Drawing.Point(77, 281)
-        Me.txtDireccion.Name = "txtDireccion"
-        Me.txtDireccion.Size = New System.Drawing.Size(380, 20)
-        Me.txtDireccion.TabIndex = 3
-        '
-        'txtPhone
-        '
-        Me.txtPhone.Location = New System.Drawing.Point(77, 319)
-        Me.txtPhone.Name = "txtPhone"
-        Me.txtPhone.Size = New System.Drawing.Size(184, 20)
-        Me.txtPhone.TabIndex = 4
-        '
-        'txtMail
-        '
-        Me.txtMail.Location = New System.Drawing.Point(77, 358)
-        Me.txtMail.Name = "txtMail"
-        Me.txtMail.Size = New System.Drawing.Size(380, 20)
-        Me.txtMail.TabIndex = 5
-        '
         'Label7
         '
         Me.Label7.AutoSize = True
@@ -497,15 +472,6 @@ Partial Class Form1
         Me.ClientesBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 22)
         Me.ClientesBindingNavigatorSaveItem.Text = "Save Data"
         '
-        'IdLabel
-        '
-        IdLabel.AutoSize = True
-        IdLabel.Location = New System.Drawing.Point(104, 188)
-        IdLabel.Name = "IdLabel"
-        IdLabel.Size = New System.Drawing.Size(19, 13)
-        IdLabel.TabIndex = 31
-        IdLabel.Text = "Id:"
-        '
         'txtNoC
         '
         Me.txtNoC.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientesBindingSource, "Id", True))
@@ -513,15 +479,6 @@ Partial Class Form1
         Me.txtNoC.Name = "txtNoC"
         Me.txtNoC.Size = New System.Drawing.Size(100, 20)
         Me.txtNoC.TabIndex = 32
-        '
-        'NombreLabel
-        '
-        NombreLabel.AutoSize = True
-        NombreLabel.Location = New System.Drawing.Point(349, 225)
-        NombreLabel.Name = "NombreLabel"
-        NombreLabel.Size = New System.Drawing.Size(45, 13)
-        NombreLabel.TabIndex = 32
-        NombreLabel.Text = "nombre:"
         '
         'txtName
         '
@@ -531,22 +488,44 @@ Partial Class Form1
         Me.txtName.Size = New System.Drawing.Size(327, 20)
         Me.txtName.TabIndex = 33
         '
+        'txtDireccion
+        '
+        Me.txtDireccion.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientesBindingSource, "direccion", True))
+        Me.txtDireccion.Location = New System.Drawing.Point(78, 282)
+        Me.txtDireccion.Name = "txtDireccion"
+        Me.txtDireccion.Size = New System.Drawing.Size(326, 20)
+        Me.txtDireccion.TabIndex = 34
+        '
+        'txtPhone
+        '
+        Me.txtPhone.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientesBindingSource, "telefono", True))
+        Me.txtPhone.Location = New System.Drawing.Point(78, 325)
+        Me.txtPhone.Name = "txtPhone"
+        Me.txtPhone.Size = New System.Drawing.Size(311, 20)
+        Me.txtPhone.TabIndex = 35
+        '
+        'txtMail
+        '
+        Me.txtMail.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientesBindingSource, "correo", True))
+        Me.txtMail.Location = New System.Drawing.Point(78, 358)
+        Me.txtMail.Name = "txtMail"
+        Me.txtMail.Size = New System.Drawing.Size(228, 20)
+        Me.txtMail.TabIndex = 36
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(883, 573)
-        Me.Controls.Add(NombreLabel)
+        Me.Controls.Add(Me.txtMail)
+        Me.Controls.Add(Me.txtPhone)
+        Me.Controls.Add(Me.txtDireccion)
         Me.Controls.Add(Me.txtName)
-        Me.Controls.Add(IdLabel)
         Me.Controls.Add(Me.txtNoC)
         Me.Controls.Add(Me.ClientesBindingNavigator)
         Me.Controls.Add(Me.TextBox6)
         Me.Controls.Add(Me.lblTotal)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.txtMail)
-        Me.Controls.Add(Me.txtPhone)
-        Me.Controls.Add(Me.txtDireccion)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.lstTicket)
         Me.Controls.Add(Me.Button3)
@@ -604,9 +583,6 @@ Partial Class Form1
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents lstTicket As System.Windows.Forms.ListBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents txtDireccion As System.Windows.Forms.TextBox
-    Friend WithEvents txtPhone As System.Windows.Forms.TextBox
-    Friend WithEvents txtMail As System.Windows.Forms.TextBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents lblTotal As System.Windows.Forms.Label
     Friend WithEvents checkedListBox As System.Windows.Forms.CheckedListBox
@@ -630,5 +606,8 @@ Partial Class Form1
     Friend WithEvents ClientesBindingNavigatorSaveItem As System.Windows.Forms.ToolStripButton
     Friend WithEvents txtNoC As System.Windows.Forms.TextBox
     Friend WithEvents txtName As System.Windows.Forms.TextBox
+    Friend WithEvents txtDireccion As System.Windows.Forms.TextBox
+    Friend WithEvents txtPhone As System.Windows.Forms.TextBox
+    Friend WithEvents txtMail As System.Windows.Forms.TextBox
 
 End Class
