@@ -40,12 +40,10 @@ Partial Class Form1
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.DGTabla = New System.Windows.Forms.DataGridView()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGTabla, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TextBox1
@@ -88,7 +86,7 @@ Partial Class Form1
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(576, 49)
+        Me.Label3.Location = New System.Drawing.Point(989, 62)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(148, 22)
         Me.Label3.TabIndex = 5
@@ -97,7 +95,7 @@ Partial Class Form1
         'TextBox3
         '
         Me.TextBox3.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(580, 72)
+        Me.TextBox3.Location = New System.Drawing.Point(993, 85)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(150, 26)
         Me.TextBox3.TabIndex = 4
@@ -163,7 +161,7 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.TextBox5)
         Me.GroupBox1.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(571, 164)
+        Me.GroupBox1.Location = New System.Drawing.Point(984, 177)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(174, 150)
         Me.GroupBox1.TabIndex = 12
@@ -175,7 +173,7 @@ Partial Class Form1
         Me.RichTextBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.RichTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.RichTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.RichTextBox1.Location = New System.Drawing.Point(238, 368)
+        Me.RichTextBox1.Location = New System.Drawing.Point(405, 368)
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.Size = New System.Drawing.Size(273, 96)
         Me.RichTextBox1.TabIndex = 13
@@ -185,7 +183,7 @@ Partial Class Form1
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(307, 341)
+        Me.Label7.Location = New System.Drawing.Point(474, 341)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(119, 22)
         Me.Label7.TabIndex = 14
@@ -194,7 +192,7 @@ Partial Class Form1
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.SQL_RentACar.My.Resources.Resources.Logo_hd_rent_a_car
-        Me.PictureBox1.Location = New System.Drawing.Point(197, -2)
+        Me.PictureBox1.Location = New System.Drawing.Point(355, -2)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(362, 86)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -215,36 +213,27 @@ Partial Class Form1
         '
         Me.Button2.BackColor = System.Drawing.Color.Transparent
         Me.Button2.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(580, 369)
+        Me.Button2.Location = New System.Drawing.Point(993, 382)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(150, 54)
         Me.Button2.TabIndex = 17
         Me.Button2.Text = "SIGUIENTE"
         Me.Button2.UseVisualStyleBackColor = False
         '
-        'DataGridView1
+        'DGTabla
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(197, 90)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(362, 248)
-        Me.DataGridView1.TabIndex = 18
-        '
-        'DataGridView2
-        '
-        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Location = New System.Drawing.Point(751, 24)
-        Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.Size = New System.Drawing.Size(432, 425)
-        Me.DataGridView2.TabIndex = 19
+        Me.DGTabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGTabla.Location = New System.Drawing.Point(197, 90)
+        Me.DGTabla.Name = "DGTabla"
+        Me.DGTabla.Size = New System.Drawing.Size(764, 248)
+        Me.DGTabla.TabIndex = 18
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1195, 473)
-        Me.Controls.Add(Me.DataGridView2)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.DGTabla)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.PictureBox1)
@@ -264,8 +253,7 @@ Partial Class Form1
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGTabla, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -288,7 +276,6 @@ Partial Class Form1
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
-    Friend WithEvents DataGridView2 As System.Windows.Forms.DataGridView
+    Friend WithEvents DGTabla As System.Windows.Forms.DataGridView
 
 End Class
