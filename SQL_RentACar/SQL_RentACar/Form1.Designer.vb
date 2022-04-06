@@ -41,6 +41,7 @@ Partial Class Form1
         Me.btnPrevio = New System.Windows.Forms.Button()
         Me.btnSiguiente = New System.Windows.Forms.Button()
         Me.DGTabla = New System.Windows.Forms.DataGridView()
+        Me.btnClear = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DGTabla, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -228,11 +229,22 @@ Partial Class Form1
         Me.DGTabla.Size = New System.Drawing.Size(764, 248)
         Me.DGTabla.TabIndex = 18
         '
+        'btnClear
+        '
+        Me.btnClear.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClear.Location = New System.Drawing.Point(197, 368)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(136, 54)
+        Me.btnClear.TabIndex = 19
+        Me.btnClear.Text = "LIMPIAR"
+        Me.btnClear.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1195, 473)
+        Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.DGTabla)
         Me.Controls.Add(Me.btnSiguiente)
         Me.Controls.Add(Me.btnPrevio)
@@ -277,5 +289,6 @@ Partial Class Form1
     Friend WithEvents btnPrevio As System.Windows.Forms.Button
     Friend WithEvents btnSiguiente As System.Windows.Forms.Button
     Friend WithEvents DGTabla As System.Windows.Forms.DataGridView
+    Friend WithEvents btnClear As System.Windows.Forms.Button
 
 End Class

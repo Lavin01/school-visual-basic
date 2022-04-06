@@ -90,4 +90,8 @@ Public Class Form1
             pasaDatos(FilaActual)
         End Try
     End Sub
+
+    Private Sub btnClear_Click(sender As System.Object, e As System.EventArgs) Handles btnClear.Click
+        limpiarDatos()
+    End Sub
 End Class
