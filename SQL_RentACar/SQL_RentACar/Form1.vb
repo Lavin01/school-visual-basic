@@ -94,4 +94,21 @@ Public Class Form1
     Private Sub btnClear_Click(sender As System.Object, e As System.EventArgs) Handles btnClear.Click
         limpiarDatos()
     End Sub
+
+    Private Sub btnRegistrar_Click(sender As System.Object, e As System.EventArgs) Handles btnRegistrar.Click
+        Try
+            conConexion.Close()
+            conConexion.Open()
+            cmdCommand = New OleDbCommand
+            cmdCommand.Connection = conConexion
+            cmdCommand.CommandText = "INSERT INTO ALQUILERES(MATRICULA, FECHA_DE_SALIDA, FECHA_DE_ENTRADA, DNI_USUARIO, TELEFONO_USUARIO, OBSERVACIONES) VALUES ('" & txtMatricula.Text & "','" & txtSalida.Text & "','" & txtEntrada.Text & "','" & txtUDni.Text & "','" & txtUPhone.Text & "','" & txtObservaciones.Text & "')"
+            cmdCommand.ExecuteNonQuery()
+            conConexion.Close()
+            MsgBox("Registro guardado")
+        Catch ex As Exception
+            MsgBox("Oops, se presento un error en el registro" & ex.Message, MsgBoxStyle.Critical)
+        End Try
+        limpiarDatos()
+        actual()
+    End Sub
 End Class

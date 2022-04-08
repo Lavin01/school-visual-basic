@@ -35,13 +35,14 @@ Partial Class Form1
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txtUPhone = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.txtObservaciones = New System.Windows.Forms.RichTextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnPrevio = New System.Windows.Forms.Button()
         Me.btnSiguiente = New System.Windows.Forms.Button()
         Me.DGTabla = New System.Windows.Forms.DataGridView()
         Me.btnClear = New System.Windows.Forms.Button()
+        Me.btnRegistrar = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DGTabla, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -169,16 +170,16 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos del Usuario"
         '
-        'RichTextBox1
+        'txtObservaciones
         '
-        Me.RichTextBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.RichTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.RichTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.RichTextBox1.Location = New System.Drawing.Point(405, 368)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(273, 96)
-        Me.RichTextBox1.TabIndex = 13
-        Me.RichTextBox1.Text = ""
+        Me.txtObservaciones.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtObservaciones.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtObservaciones.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtObservaciones.Location = New System.Drawing.Point(405, 368)
+        Me.txtObservaciones.Name = "txtObservaciones"
+        Me.txtObservaciones.Size = New System.Drawing.Size(273, 96)
+        Me.txtObservaciones.TabIndex = 13
+        Me.txtObservaciones.Text = ""
         '
         'Label7
         '
@@ -239,18 +240,30 @@ Partial Class Form1
         Me.btnClear.Text = "LIMPIAR"
         Me.btnClear.UseVisualStyleBackColor = True
         '
+        'btnRegistrar
+        '
+        Me.btnRegistrar.BackColor = System.Drawing.Color.Transparent
+        Me.btnRegistrar.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRegistrar.Location = New System.Drawing.Point(785, 382)
+        Me.btnRegistrar.Name = "btnRegistrar"
+        Me.btnRegistrar.Size = New System.Drawing.Size(150, 54)
+        Me.btnRegistrar.TabIndex = 20
+        Me.btnRegistrar.Text = "REGISTRAR"
+        Me.btnRegistrar.UseVisualStyleBackColor = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1195, 473)
+        Me.Controls.Add(Me.btnRegistrar)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.DGTabla)
         Me.Controls.Add(Me.btnSiguiente)
         Me.Controls.Add(Me.btnPrevio)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.RichTextBox1)
+        Me.Controls.Add(Me.txtObservaciones)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.txtEntrada)
@@ -283,12 +296,13 @@ Partial Class Form1
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents txtUPhone As System.Windows.Forms.TextBox
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
+    Friend WithEvents txtObservaciones As System.Windows.Forms.RichTextBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents btnPrevio As System.Windows.Forms.Button
     Friend WithEvents btnSiguiente As System.Windows.Forms.Button
     Friend WithEvents DGTabla As System.Windows.Forms.DataGridView
     Friend WithEvents btnClear As System.Windows.Forms.Button
+    Friend WithEvents btnRegistrar As System.Windows.Forms.Button
 
 End Class
